@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Elige a tu compañero · HabitMon{% endblock %}
+{% block screen_class %}screen--selection{% endblock %}
+
+{% block content %}
+<h1>ELIGE A TU<br>COMPAÑERO</h1>
+
+<form method="post" id="starter-form" class="selection-form" data-confirm-template="{{ confirm_text }}">
+  {% csrf_token %}
+  <div class="carousel">
+    <button type="button" class="arrow" data-step="-1" aria-label="Anterior">&#9664;</button>
+
+    <div class="starters" role="radiogroup" aria-label="Pokémon iniciales">
+      {% for starter in starters %}
+      <label class="starter" data-name="{{ starter.name }}" data-types="{{ starter.types_display }}"
+             data-type="{{ starter.primary_type|lower }}" data-initial="{{ starter.name|first }}">
+        <input type="radio" name="species" value="{{ starter.pk }}" required
+               {% if forloop.first %}checked{% endif %}>
+        <img src="{{ starter.sprite_url }}" alt="{{ starter.name }}" width="96" height="96"
+             onerror="this.parentElement.classList.add('sprite--missing')">
+      </label>
+      {% endfor %}
+    </div>
+
+    <button type="button" class="arrow" data-step="1" aria-label="Siguiente">&#9654;</button>
+  </div>
+
+  <div class="dots" aria-hidden="true">
+    {% for starter in starters %}<span></span>{% endfor %}
+  </div>
+
+  <div class="selection-footer">
+    <p class="starter-name" id="starter-name" aria-live="polite">&nbsp;</p>
+    <p class="starter-types" id="starter-types">&nbsp;</p>
+    <button type="submit" class="btn">ELEGIR</button>
+  </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+{% load static %}
+<script src="{% static 'js/selection.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Pokédex · HabitMon{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pokedex.css' %}">{% endblock %}
+{% block screen_class %}screen--dex{% endblock %}
+{% block screen_attrs %}data-swipe-right="{% url 'companions:home' %}" data-scroller="#dex-list"{% endblock %}
+
+{% block content %}
+<header class="dex-header">
+  <h1>POKÉDEX</h1>
+  <p class="dex-count" aria-label="{{ unlocked_count }} de {{ total_count }} especies desbloqueadas">
+    <strong>{{ unlocked_count|stringformat:"03d" }}</strong>/{{ total_count|stringformat:"03d" }}
+  </p>
+  <div class="dex-progress" aria-hidden="true">
+    <span style="width: {% widthratio unlocked_count total_count 100 %}%"></span>
+  </div>
+</header>
+
+<ol class="dex-list" id="dex-list">
+  {% for item in items %}
+  <li>
+    {% if item.is_unlocked %}
+    <a class="dex-row" href="{% url 'pokedex:detail' item.number %}">
+      <span class="dex-num">#{{ item.number_display }}</span>
+      <img src="{{ item.image_url }}" alt="" width="80" height="80" loading="lazy" draggable="false">
+      <span class="dex-name">{{ item.name|upper }}</span>
+    </a>
+    {% elif item.is_seen %}
+    <a class="dex-row dex-row--seen" href="{% url 'pokedex:detail' item.number %}"
+       aria-label="Número {{ item.number_display }}, {{ item.name }}, visto">
+      <span class="dex-num">#{{ item.number_display }}</span>
+      <img src="{{ item.image_url }}" alt="" width="80" height="80" loading="lazy" draggable="false">
+      <span class="dex-name">{{ item.name|upper }} <span class="dex-seen-badge">VISTO</span></span>
+    </a>
+    {% else %}
+    <div class="dex-row dex-row--locked" aria-label="Número {{ item.number_display }}, desconocido">
+      <span class="dex-num">#{{ item.number_display }}</span>
+      <img src="{{ item.image_url }}" alt="" width="80" height="80" loading="lazy" draggable="false">
+      <span class="dex-name">???</span>
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+
+<a class="edge-tab edge-tab--left" href="{% url 'companions:home' %}" aria-label="Volver al compañero">&#9654;</a>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/pokedex.js' %}"></script>
+{% endblock %}

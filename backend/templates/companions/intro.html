@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}¡{{ companion.species.name }} se une a ti! · HabitMon{% endblock %}
+{% block screen_class %}screen--intro{% endblock %}
+
+{% block content %}
+<div class="intro-stage" data-type="{{ companion.species.primary_type|lower }}"
+     data-initial="{{ companion.species.name|first }}">
+  <div class="pokeball" aria-hidden="true"></div>
+  <img class="intro-sprite" src="{{ companion.species.sprite_url }}" alt="{{ companion.species.name }}"
+       width="112" height="112" onerror="this.parentElement.classList.add('sprite--missing')">
+</div>
+
+<form method="post" class="intro-form" id="intro-form">
+  {% csrf_token %}
+  <div class="textbox pixel-box" aria-live="polite">
+    {% for line in lines %}<p class="intro-line">{{ line }}</p>{% endfor %}
+    <span class="textbox-more" aria-hidden="true">▼</span>
+  </div>
+  <button type="submit" class="btn" id="intro-next">CONTINUAR</button>
+</form>
+{% endblock %}
+
+{% block scripts %}
+{% load static %}
+<script src="{% static 'js/intro.js' %}"></script>
+{% endblock %}

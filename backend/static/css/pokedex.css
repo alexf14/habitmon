@@ -1,0 +1,163 @@
+/* Pokédex: lista de 151 especies (cabecera fija + lista con scroll vertical) y ficha. */
+
+[data-type="normal"] { --type-color: #a8a878; }
+[data-type="fuego"] { --type-color: #f08030; }
+[data-type="agua"] { --type-color: #6890f0; }
+[data-type="planta"] { --type-color: #78c850; }
+[data-type="eléctrico"] { --type-color: #e8c020; }
+[data-type="hielo"] { --type-color: #7fcfcf; }
+[data-type="lucha"] { --type-color: #c03028; }
+[data-type="veneno"] { --type-color: #a040a0; }
+[data-type="tierra"] { --type-color: #d8b050; }
+[data-type="volador"] { --type-color: #a890f0; }
+[data-type="psíquico"] { --type-color: #f85888; }
+[data-type="bicho"] { --type-color: #a8b820; }
+[data-type="roca"] { --type-color: #b8a038; }
+[data-type="fantasma"] { --type-color: #705898; }
+[data-type="dragón"] { --type-color: #7038f8; }
+[data-type="siniestro"] { --type-color: #705848; }
+[data-type="acero"] { --type-color: #9898b8; }
+[data-type="hada"] { --type-color: #e68aa4; }
+
+/* ---------- Lista ---------- */
+
+.screen--dex {
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 12% 0 13%;
+}
+
+.dex-header { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: none; }
+.dex-header h1 { font-size: 13px; }
+.dex-count { font-size: 9px; color: var(--muted); }
+.dex-count strong { color: var(--accent); font-weight: normal; }
+.dex-progress { width: 120px; height: 6px; background: rgba(0, 0, 0, .1); box-shadow: inset 0 0 0 1px var(--ink); }
+.dex-progress span { display: block; height: 100%; min-width: 2px; background: var(--accent); }
+
+.dex-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0 14px;
+  width: 72%;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(transparent, #000 14px, #000 calc(100% - 22px), transparent);
+  mask-image: linear-gradient(transparent, #000 14px, #000 calc(100% - 22px), transparent);
+}
+.dex-list::-webkit-scrollbar { display: none; }
+
+.dex-row {
+  display: grid;
+  grid-template-columns: 44px 80px 1fr;
+  align-items: center;
+  gap: 10px;
+  height: 96px;
+  padding: 0 8px;
+  font-size: 9px;
+  text-align: left;
+  color: var(--ink);
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.dex-row img { width: 80px; height: 80px; object-fit: contain; image-rendering: pixelated; }
+.dex-row .dex-num { color: var(--muted); font-size: 8px; }
+
+a.dex-row:hover, a.dex-row:focus-visible { background: rgba(227, 53, 13, .1); outline: none; }
+a.dex-row:focus-visible { box-shadow: inset 0 0 0 2px var(--ink); }
+a.dex-row .dex-name::after { content: " ›"; color: var(--accent); }
+
+.dex-row--locked { color: #a9abb0; cursor: default; }
+
+.dex-row--seen { color: var(--ink); }
+.dex-seen-badge {
+  display: inline-block;
+  font-size: 6px;
+  padding: 2px 5px;
+  background: var(--muted);
+  color: #fff;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* ---------- Ficha ---------- */
+
+.screen--dex-detail {
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 11% 15% 10%;
+}
+
+.dex-detail-header { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: none; }
+.dex-detail-header .dex-num { font-size: 9px; color: var(--muted); }
+.dex-detail-header h1 { font-size: 13px; }
+.dex-genus { font-size: 7px; color: var(--muted); }
+
+.dex-detail-sprite { position: relative; width: 190px; height: 182px; display: grid; place-items: end center; flex: none; }
+.dex-detail-sprite::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  width: 140px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--type-color, var(--muted));
+  opacity: .35;
+}
+.dex-detail-sprite img {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  position: relative;
+  z-index: 1;
+}
+
+.dex-detail-body {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 6px 10px;
+}
+.dex-detail-body::-webkit-scrollbar { display: none; }
+
+.dex-types { display: flex; gap: 8px; }
+.type-badge {
+  font-size: 7px;
+  padding: 5px 8px;
+  color: #fff;
+  background: var(--type-color, var(--muted));
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .35);
+}
+
+.dex-measures { display: flex; gap: 24px; margin: 0; font-size: 8px; }
+.dex-measures div { display: flex; gap: 8px; }
+.dex-measures dt { color: var(--muted); }
+.dex-measures dd { margin: 0; }
+
+.dex-detail-body .textbox { font-size: 8px; line-height: 1.8; padding: 12px; }
+.dex-unlocked { font-size: 6px; color: var(--muted); }
+
+.dex-status-seen {
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  padding: 8px 0;
+}
+
+@media (max-width: 520px) {
+  .dex-row { height: 72px; grid-template-columns: 38px 64px 1fr; gap: 6px; font-size: 8px; }
+  .dex-row img { width: 64px; height: 64px; }
+  .dex-detail-sprite { width: 150px; height: 144px; }
+  .dex-detail-sprite img { width: 150px; height: 150px; }
+}

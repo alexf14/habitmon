@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}#{{ species.number_display }} {{ species.name }} · Pokédex{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pokedex.css' %}">{% endblock %}
+{% block screen_class %}screen--dex-detail{% endblock %}
+{% block screen_attrs %}data-swipe-right="{% url 'pokedex:index' %}" data-scroller=".dex-detail-body"{% endblock %}
+
+{% block content %}
+<header class="dex-detail-header">
+  <p class="dex-num">#{{ species.number_display }}</p>
+  <h1>{{ species.name|upper }}</h1>
+  {% if entry.status == "UNLOCKED" %}<p class="dex-genus">{{ species.genus }}</p>{% endif %}
+</header>
+
+<div class="dex-detail-sprite" data-type="{{ species.primary_type|lower }}" data-initial="{{ species.name|first }}">
+  {% if entry.status == "UNLOCKED" %}
+  <img src="{{ species.sprite_url }}" alt="{{ species.name }}" width="190" height="190" draggable="false"
+       onerror="this.parentElement.classList.add('sprite--missing')">
+  {% else %}
+  <img src="{{ species.silhouette_url }}" alt="" width="190" height="190" draggable="false">
+  {% endif %}
+</div>
+
+<div class="dex-detail-body">
+  <p class="dex-types">
+    <span class="type-badge" data-type="{{ species.primary_type|lower }}">{{ species.primary_type }}</span>
+    {% if species.secondary_type %}
+    <span class="type-badge" data-type="{{ species.secondary_type|lower }}">{{ species.secondary_type }}</span>
+    {% endif %}
+  </p>
+
+  {% if entry.status == "UNLOCKED" %}
+  <dl class="dex-measures">
+    <div><dt>ALT.</dt><dd>{{ species.height_m|floatformat:1 }} m</dd></div>
+    <div><dt>PESO</dt><dd>{{ species.weight_kg|floatformat:1 }} kg</dd></div>
+  </dl>
+  {% if species.description %}
+  <p class="textbox pixel-box">{{ species.description }}</p>
+  {% endif %}
+  <p class="dex-unlocked">DESBLOQUEADO · {{ entry.unlocked_at|date:"d/m/Y" }}</p>
+  {% else %}
+  <p class="dex-status-seen">VISTO</p>
+  {% endif %}
+</div>
+
+<a class="edge-tab edge-tab--left" href="{% url 'pokedex:index' %}" aria-label="Volver a la Pokédex">&#9654;</a>
+{% endblock %}

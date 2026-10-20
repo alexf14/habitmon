@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}HabitMon{% endblock %}
+{% block screen_class %}screen--gb{% endblock %}
+
+{% block content %}
+<div class="logo" aria-label="HabitMon">
+  <span class="logo-ball" aria-hidden="true"></span>
+  <span class="logo-text">HABIT<br>MON</span>
+</div>
+
+<div class="textbox pixel-box">
+  <p>¡Bienvenido a HabitMon!</p>
+</div>
+
+<a class="btn btn--blink" href="{% url 'companions:selection' %}">COMENZAR</a>
+{% endblock %}

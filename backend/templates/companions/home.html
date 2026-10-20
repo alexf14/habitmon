@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}{{ companion.display_name }} · HabitMon{% endblock %}
+{% block screen_class %}screen--home{% endblock %}
+{% block screen_attrs %}data-swipe-left="{% url 'pokedex:index' %}"{% endblock %}
+
+{% block content %}
+<header class="home-header">
+  <h1>{{ companion.display_name|upper }}</h1>
+  <p class="home-level">Nv. {{ companion.level }}</p>
+</header>
+
+<div class="home-companion" data-type="{{ companion.species.primary_type|lower }}"
+     data-initial="{{ companion.species.name|first }}">
+  <img src="{{ companion.species.sprite_url }}" alt="{{ companion.species.name }}" width="112" height="112"
+       onerror="this.parentElement.classList.add('sprite--missing')">
+</div>
+
+<section class="home-panel pixel-box">
+  <div class="bar bar--exp" title="Experiencia: {{ companion.experience }}">
+    <span class="bar-label">EXP</span>
+    <span class="bar-track"><span class="bar-fill" style="width: 0%"></span></span>
+  </div>
+  {% for short, label, value in stats %}
+  <div class="bar" title="{{ label }}: {{ value }}/100">
+    <span class="bar-label">{{ short }}</span>
+    <span class="bar-track" role="meter" aria-label="{{ label }}" aria-valuemin="0" aria-valuemax="100"
+          aria-valuenow="{{ value }}"><span class="bar-fill" style="width: {{ value }}%"></span></span>
+  </div>
+  {% endfor %}
+</section>
+
+<div class="home-actions">
+  <button type="button" class="btn btn--small btn--ghost" id="info-open" aria-label="Información">INFO</button>
+</div>
+
+<a class="edge-tab edge-tab--right" href="{% url 'pokedex:index' %}" aria-label="Abrir Pokédex">&#9664;</a>
+
+<dialog class="info pixel-box" id="info-dialog">
+  <h2>{{ companion.species.name|upper }}</h2>
+  <dl>
+    <dt>Nº</dt><dd>{{ companion.species.pokedex_number|stringformat:"03d" }}</dd>
+    <dt>Tipo</dt><dd>{{ companion.species.types_display }}</dd>
+    <dt>Nivel</dt><dd>{{ companion.level }}</dd>
+    <dt>EXP</dt><dd>{{ companion.experience }}</dd>
+    {% for short, label, value in stats %}<dt>{{ label }}</dt><dd>{{ value }}/100</dd>{% endfor %}
+    <dt>Desde</dt><dd>{{ companion.created_at|date:"d/m/Y" }}</dd>
+  </dl>
+  <button type="button" class="btn btn--small" id="info-close">CERRAR</button>
+</dialog>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  (function () {
+    var dialog = document.getElementById("info-dialog");
+    document.getElementById("info-open").addEventListener("click", function () { dialog.showModal(); });
+    document.getElementById("info-close").addEventListener("click", function () { dialog.close(); });
+  })();
+</script>
+{% endblock %}

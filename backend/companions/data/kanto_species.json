@@ -1,0 +1,1512 @@
+[
+ {
+  "number": 1,
+  "name": "Bulbasaur",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Semilla",
+  "height_dm": 7,
+  "weight_hg": 69,
+  "description": "Desde que nace, crece alimentándose de los nutrientes que contiene la semilla de su lomo."
+ },
+ {
+  "number": 2,
+  "name": "Ivysaur",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Semilla",
+  "height_dm": 10,
+  "weight_hg": 130,
+  "description": "La luz del sol lo fortalece y hace que le crezca el capullo que tiene en el lomo."
+ },
+ {
+  "number": 3,
+  "name": "Venusaur",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Semilla",
+  "height_dm": 20,
+  "weight_hg": 1000,
+  "description": "La flor que tiene en el lomo libera un delicado aroma, que tiene un efecto relajante en combate."
+ },
+ {
+  "number": 4,
+  "name": "Charmander",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Lagartija",
+  "height_dm": 6,
+  "weight_hg": 85,
+  "description": "Este Pokémon nace con una llama en la punta de la cola. Si se le apagara, fallecería."
+ },
+ {
+  "number": 5,
+  "name": "Charmeleon",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Llama",
+  "height_dm": 11,
+  "weight_hg": 190,
+  "description": "Si se exalta en combate, expulsa intensas llamaradas que incineran todo a su alrededor."
+ },
+ {
+  "number": 6,
+  "name": "Charizard",
+  "primary_type": "Fuego",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Llama",
+  "height_dm": 17,
+  "weight_hg": 905,
+  "description": "Sus potentes alas le permiten volar a una altura de 1400 m. Escupe llamaradas que llegan a alcanzar temperaturas elevadísimas."
+ },
+ {
+  "number": 7,
+  "name": "Squirtle",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Tortuguita",
+  "height_dm": 5,
+  "weight_hg": 90,
+  "description": "Cuando se siente en peligro, se esconde en su caparazón y escupe chorros de agua por la boca."
+ },
+ {
+  "number": 8,
+  "name": "Wartortle",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Tortuga",
+  "height_dm": 10,
+  "weight_hg": 225,
+  "description": "Utiliza hábilmente sus peludas orejas y la cola para mantener el equilibrio al nadar."
+ },
+ {
+  "number": 9,
+  "name": "Blastoise",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Armazón",
+  "height_dm": 16,
+  "weight_hg": 855,
+  "description": "Dispara chorros de agua a través de los cañones de su caparazón, capaces de agujerear incluso el acero."
+ },
+ {
+  "number": 10,
+  "name": "Caterpie",
+  "primary_type": "Bicho",
+  "secondary_type": null,
+  "genus": "Pokémon Gusano",
+  "height_dm": 3,
+  "weight_hg": 29,
+  "description": "Sus cortas patas están recubiertas de ventosas que le permiten subir incansable por muros y cuestas."
+ },
+ {
+  "number": 11,
+  "name": "Metapod",
+  "primary_type": "Bicho",
+  "secondary_type": null,
+  "genus": "Pokémon Capullo",
+  "height_dm": 7,
+  "weight_hg": 99,
+  "description": "Aunque cuenta con una coraza muy dura, tiene un cuerpo bastante blando. Un ataque violento puede acabar con él."
+ },
+ {
+  "number": 12,
+  "name": "Butterfree",
+  "primary_type": "Bicho",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Mariposa",
+  "height_dm": 11,
+  "weight_hg": 320,
+  "description": "Recoge néctar a diario y se lo adhiere al pelo de las patas para llevarlo a su nido."
+ },
+ {
+  "number": 13,
+  "name": "Weedle",
+  "primary_type": "Bicho",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Oruga",
+  "height_dm": 3,
+  "weight_hg": 32,
+  "description": "Weedle tiene un finísimo sentido del olfato. Es capaz de distinguir las hojas que le gustan de las que no le gustan olisqueando un poco con la gran nariz que tiene."
+ },
+ {
+  "number": 14,
+  "name": "Kakuna",
+  "primary_type": "Bicho",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Capullo",
+  "height_dm": 6,
+  "weight_hg": 100,
+  "description": "Kakuna permanece prácticamente inmóvil al encaramarse a los árboles, aunque la actividad interna de su organismo tiene un ritmo frenético, pues se prepara para su evolución. Prueba de esto es la alta temperatura de su caparazón."
+ },
+ {
+  "number": 15,
+  "name": "Beedrill",
+  "primary_type": "Bicho",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Abeja Veneno",
+  "height_dm": 10,
+  "weight_hg": 295,
+  "description": "Los Beedrill defienden su territorio a toda costa. No es conveniente acercarse a su colmena, por seguridad. Si se les molesta, todo un enjambre atacará ferozmente."
+ },
+ {
+  "number": 16,
+  "name": "Pidgey",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Pajarito",
+  "height_dm": 3,
+  "weight_hg": 18,
+  "description": "Pidgey tiene un sentido de la orientación muy desarrollado. Es capaz de regresar a su nido, por lejos que se encuentre de las zonas que le resultan familiares."
+ },
+ {
+  "number": 17,
+  "name": "Pidgeotto",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Pájaro",
+  "height_dm": 11,
+  "weight_hg": 300,
+  "description": "Pidgeotto se apodera de una zona muy vasta como su territorio y la sobrevuela para controlarla. Si alguien invade su espacio vital, no tendrá ningún reparo en castigarlo con sus afiladas garras."
+ },
+ {
+  "number": 18,
+  "name": "Pidgeot",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Pájaro",
+  "height_dm": 15,
+  "weight_hg": 395,
+  "description": "El plumaje de este Pokémon es bonito e hipnótico. Muchos Entrenadores se quedan embobados ante la belleza impactante de las plumas que tiene en la cabeza; lo que les lleva a elegir a Pidgeot como su Pokémon."
+ },
+ {
+  "number": 19,
+  "name": "Rattata",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Ratón",
+  "height_dm": 3,
+  "weight_hg": 35,
+  "description": "Un Pokémon muy extendido con el que conviene tener cuidado ya que sus afilados incisivos son capaces de roer maderas nobles sin problema."
+ },
+ {
+  "number": 20,
+  "name": "Raticate",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Ratón",
+  "height_dm": 7,
+  "weight_hg": 185,
+  "description": "Mantiene el equilibrio gracias a sus bigotes. Aunque le coja confianza a alguien, uno puede llevarse un mordisco si intenta tocarlo."
+ },
+ {
+  "number": 21,
+  "name": "Spearow",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Pajarito",
+  "height_dm": 3,
+  "weight_hg": 20,
+  "description": "Sus cortas alas le impiden volar grandes distancias, por lo que revolotea inquieto y picotea a todo Pokémon insecto que ve."
+ },
+ {
+  "number": 22,
+  "name": "Fearow",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Pico",
+  "height_dm": 12,
+  "weight_hg": 380,
+  "description": "En Alola, se alimenta de Pokémon pez. A menudo se lo puede ver sobrevolando el mar en círculos en busca de presas."
+ },
+ {
+  "number": 23,
+  "name": "Ekans",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Serpiente",
+  "height_dm": 20,
+  "weight_hg": 69,
+  "description": "Los huevos de Pokémon pájaro son su manjar predilecto. Como se los traga enteros, en ocasiones se atraganta y pierde el conocimiento."
+ },
+ {
+  "number": 24,
+  "name": "Arbok",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Cobra",
+  "height_dm": 35,
+  "weight_hg": 650,
+  "description": "Tras confundir a su presa con el motivo de su cuerpo, se enrosca a su alrededor y la aferra, a la espera de que su pulso se detenga."
+ },
+ {
+  "number": 25,
+  "name": "Pikachu",
+  "primary_type": "Eléctrico",
+  "secondary_type": null,
+  "genus": "Pokémon Ratón",
+  "height_dm": 4,
+  "weight_hg": 60,
+  "description": "Los miembros de esta especie se saludan entre sí uniendo sus colas y transmitiéndose corriente eléctrica."
+ },
+ {
+  "number": 26,
+  "name": "Raichu",
+  "primary_type": "Eléctrico",
+  "secondary_type": null,
+  "genus": "Pokémon Ratón",
+  "height_dm": 8,
+  "weight_hg": 300,
+  "description": "Cuando ha descargado las bolsas de las mejillas, levanta la cola y absorbe la carga eléctrica que hay en el ambiente."
+ },
+ {
+  "number": 27,
+  "name": "Sandshrew",
+  "primary_type": "Tierra",
+  "secondary_type": null,
+  "genus": "Pokémon Ratón",
+  "height_dm": 6,
+  "weight_hg": 120,
+  "description": "Excava madrigueras profundas en las que vive. Parte con sus afiladas garras cualquier roca, por dura que sea, que le entorpezca el camino."
+ },
+ {
+  "number": 28,
+  "name": "Sandslash",
+  "primary_type": "Tierra",
+  "secondary_type": null,
+  "genus": "Pokémon Ratón",
+  "height_dm": 10,
+  "weight_hg": 295,
+  "description": "Trepa a los árboles con sus afiladas garras y deja caer bayas para los Sandshrew que esperan debajo."
+ },
+ {
+  "number": 29,
+  "name": "Nidoran♀",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Pin Veneno",
+  "height_dm": 4,
+  "weight_hg": 70,
+  "description": "Parte las bayas con sus duros incisivos para comérselas. La punta del cuerno de las hembras es más redondeada que la de los machos."
+ },
+ {
+  "number": 30,
+  "name": "Nidorina",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Pin Veneno",
+  "height_dm": 8,
+  "weight_hg": 200,
+  "description": "Cuando el peligro se cierne sobre la manada, los miembros unen fuerzas para defenderse emitiendo un coro de ondas ultrasónicas."
+ },
+ {
+  "number": 31,
+  "name": "Nidoqueen",
+  "primary_type": "Veneno",
+  "secondary_type": "Tierra",
+  "genus": "Pokémon Taladro",
+  "height_dm": 13,
+  "weight_hg": 600,
+  "description": "Para mecer a sus crías, las coloca en los huecos que tiene entre las púas dorsales, momento durante el cual no secretan veneno."
+ },
+ {
+  "number": 32,
+  "name": "Nidoran♂",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Pin Veneno",
+  "height_dm": 5,
+  "weight_hg": 90,
+  "description": "Pequeño pero valiente. Arriesgaría la vida en combate con tal de proteger a su compañera."
+ },
+ {
+  "number": 33,
+  "name": "Nidorino",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Pin Veneno",
+  "height_dm": 9,
+  "weight_hg": 195,
+  "description": "Es nervioso y agresivo por naturaleza. Cuando suben sus niveles de adrenalina, la concentración de toxinas en su veneno aumenta."
+ },
+ {
+  "number": 34,
+  "name": "Nidoking",
+  "primary_type": "Veneno",
+  "secondary_type": "Tierra",
+  "genus": "Pokémon Taladro",
+  "height_dm": 14,
+  "weight_hg": 620,
+  "description": "Presume de su hercúlea fuerza y combate vigorosamente con su robusta cola y su cuerno, con el que hasta puede pulverizar diamantes."
+ },
+ {
+  "number": 35,
+  "name": "Clefairy",
+  "primary_type": "Hada",
+  "secondary_type": null,
+  "genus": "Pokémon Hada",
+  "height_dm": 6,
+  "weight_hg": 75,
+  "description": "Su adorable grito y comportamiento lo hacen muy popular. Sin embargo, raramente se avista."
+ },
+ {
+  "number": 36,
+  "name": "Clefable",
+  "primary_type": "Hada",
+  "secondary_type": null,
+  "genus": "Pokémon Hada",
+  "height_dm": 13,
+  "weight_hg": 400,
+  "description": "Su oído es tan fino que puede percibir cómo cae una aguja a 1 km de distancia. Por eso suele habitar en lugares tranquilos."
+ },
+ {
+  "number": 37,
+  "name": "Vulpix",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Zorro",
+  "height_dm": 6,
+  "weight_hg": 99,
+  "description": "Su pelaje se va volviendo más suave, lustroso y bello a medida que le crecen las seis colas. Al abrazarlo, emana una ligera calidez."
+ },
+ {
+  "number": 38,
+  "name": "Ninetales",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Zorro",
+  "height_dm": 11,
+  "weight_hg": 199,
+  "description": "Muy inteligente y vengativo. Agarrar una de sus colas podría traer 1000 años de mala suerte."
+ },
+ {
+  "number": 39,
+  "name": "Jigglypuff",
+  "primary_type": "Normal",
+  "secondary_type": "Hada",
+  "genus": "Pokémon Globo",
+  "height_dm": 5,
+  "weight_hg": 55,
+  "description": "Posee la capacidad de modular su voz a voluntad cambiando la longitud de onda para entonar una melodía misteriosa que provoca adormecimiento."
+ },
+ {
+  "number": 40,
+  "name": "Wigglytuff",
+  "primary_type": "Normal",
+  "secondary_type": "Hada",
+  "genus": "Pokémon Globo",
+  "height_dm": 10,
+  "weight_hg": 120,
+  "description": "Se enorgullece de su pelaje fino y sedoso. El rizo de la frente, en especial, posee un tacto sublime."
+ },
+ {
+  "number": 41,
+  "name": "Zubat",
+  "primary_type": "Veneno",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Murciélago",
+  "height_dm": 8,
+  "weight_hg": 75,
+  "description": "Habitan en cuevas donde no llegan los rayos del sol. De día, se acurrucan unos junto a otros para entrar en calor mientras duermen."
+ },
+ {
+  "number": 42,
+  "name": "Golbat",
+  "primary_type": "Veneno",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Murciélago",
+  "height_dm": 16,
+  "weight_hg": 550,
+  "description": "Camina con soltura sobre sus pequeñas patas. Se acerca con sigilo a su presa mientras esta duerme y le clava los colmillos para chuparle la sangre."
+ },
+ {
+  "number": 43,
+  "name": "Oddish",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Hierbajo",
+  "height_dm": 5,
+  "weight_hg": 54,
+  "description": "Durante el día, se agazapa en el frío subsuelo huyendo del sol. La luz de la luna le hace crecer."
+ },
+ {
+  "number": 44,
+  "name": "Gloom",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Hierbajo",
+  "height_dm": 8,
+  "weight_hg": 86,
+  "description": "Lo que parece baba es realmente un néctar muy pegajoso que se adhiere sin remisión al tocarlo."
+ },
+ {
+  "number": 45,
+  "name": "Vileplume",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Flor",
+  "height_dm": 12,
+  "weight_hg": 186,
+  "description": "Cuanto mayores son sus pétalos, más tóxico es su polen. Le pesa la cabeza y le cuesta mantenerla erguida."
+ },
+ {
+  "number": 46,
+  "name": "Paras",
+  "primary_type": "Bicho",
+  "secondary_type": "Planta",
+  "genus": "Pokémon Hongo",
+  "height_dm": 3,
+  "weight_hg": 54,
+  "description": "Las setas que tiene en el dorso, llamadas tochukaso, controlan al insecto contra su voluntad."
+ },
+ {
+  "number": 47,
+  "name": "Parasect",
+  "primary_type": "Bicho",
+  "secondary_type": "Planta",
+  "genus": "Pokémon Hongo",
+  "height_dm": 10,
+  "weight_hg": 295,
+  "description": "Sus esporas venenosas se usan para elaborar remedios medicinales que en Alola, al parecer, son de calidad más bien mediocre."
+ },
+ {
+  "number": 48,
+  "name": "Venonat",
+  "primary_type": "Bicho",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Insecto",
+  "height_dm": 10,
+  "weight_hg": 300,
+  "description": "Dicen que durante su evolución Venonat desarrolló una fina capa de espeso pelo alrededor de todo el cuerpo para protegerse. Tiene unos ojos tan grandes que no hay presa que le pase desapercibida."
+ },
+ {
+  "number": 49,
+  "name": "Venomoth",
+  "primary_type": "Bicho",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Polilla Ven.",
+  "height_dm": 15,
+  "weight_hg": 125,
+  "description": "Venomoth es nocturno, solo actúa en la oscuridad. Su alimento preferido son los pequeños insectos que se concentran cerca de los focos de luz en la oscuridad de la noche."
+ },
+ {
+  "number": 50,
+  "name": "Diglett",
+  "primary_type": "Tierra",
+  "secondary_type": null,
+  "genus": "Pokémon Topo",
+  "height_dm": 2,
+  "weight_hg": 8,
+  "description": "Este Pokémon avanza horadando la tierra a poca profundidad. Resulta fácil localizarlo por los montículos que deja como rastro."
+ },
+ {
+  "number": 51,
+  "name": "Dugtrio",
+  "primary_type": "Tierra",
+  "secondary_type": null,
+  "genus": "Pokémon Topo",
+  "height_dm": 7,
+  "weight_hg": 333,
+  "description": "Estos trillizos cavan a una profundidad de hasta 100 km. Se desconoce el aspecto de la parte de sus cuerpos que se oculta bajo tierra."
+ },
+ {
+  "number": 52,
+  "name": "Meowth",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Gato Araña",
+  "height_dm": 4,
+  "weight_hg": 42,
+  "description": "Se lava cuidadosamente la cara para que no se le ensucie la moneda de oro que tiene en la frente. No se lleva nada bien con los Meowth de Galar."
+ },
+ {
+  "number": 53,
+  "name": "Persian",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Gato Fino",
+  "height_dm": 10,
+  "weight_hg": 320,
+  "description": "Hace gala de un porte elegante y majestuoso. No congenia con los toscos Perrserker y ambos se profesan un mutuo desprecio."
+ },
+ {
+  "number": 54,
+  "name": "Psyduck",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Pato",
+  "height_dm": 8,
+  "weight_hg": 196,
+  "description": "Sus dolores de cabeza empeoran a medida que aumenta su nivel de estrés. Su increíble poder psíquico puede causar estragos a su alrededor."
+ },
+ {
+  "number": 55,
+  "name": "Golduck",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Pato",
+  "height_dm": 17,
+  "weight_hg": 766,
+  "description": "Cuenta una antigua leyenda que los Golduck arrastraban a quienes contaminaran sus ríos al fondo de las aguas."
+ },
+ {
+  "number": 56,
+  "name": "Mankey",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Mono Cerdo",
+  "height_dm": 5,
+  "weight_hg": 280,
+  "description": "Cuando un ejemplar se enfada, contagia su ira al resto, por lo que los grupos de Mankey desconocen el concepto de vida reposada."
+ },
+ {
+  "number": 57,
+  "name": "Primeape",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Mono Cerdo",
+  "height_dm": 10,
+  "weight_hg": 320,
+  "description": "Los vasos sanguíneos de su cerebro son más fuertes que los de otros Pokémon, por lo que puede vivir en cólera perpetua sin problemas."
+ },
+ {
+  "number": 58,
+  "name": "Growlithe",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Perrito",
+  "height_dm": 7,
+  "weight_hg": 190,
+  "description": "Extremadamente fiel, ladrará furioso a cualquiera que suponga una amenaza para su Entrenador con tal de defenderlo."
+ },
+ {
+  "number": 59,
+  "name": "Arcanine",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Leyenda",
+  "height_dm": 19,
+  "weight_hg": 1550,
+  "description": "Muchos han quedado cautivados por su belleza desde la antigüedad. Corre ágilmente como si tuviera alas."
+ },
+ {
+  "number": 60,
+  "name": "Poliwag",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Renacuajo",
+  "height_dm": 6,
+  "weight_hg": 124,
+  "description": "En ríos de aguas bravas, usa sus gruesos labios a modo de ventosa para adherirse a las rocas."
+ },
+ {
+  "number": 61,
+  "name": "Poliwhirl",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Renacuajo",
+  "height_dm": 10,
+  "weight_hg": 200,
+  "description": "Secreta un sudor viscoso que le sirve para escurrirse y escapar del agarre de sus enemigos."
+ },
+ {
+  "number": 62,
+  "name": "Poliwrath",
+  "primary_type": "Agua",
+  "secondary_type": "Lucha",
+  "genus": "Pokémon Renacuajo",
+  "height_dm": 13,
+  "weight_hg": 540,
+  "description": "No solo es un experto nadador, sino que también domina las artes marciales. Propina enérgicos puñetazos gracias a sus musculosos brazos."
+ },
+ {
+  "number": 63,
+  "name": "Abra",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Psi",
+  "height_dm": 9,
+  "weight_hg": 195,
+  "description": "Puede teletransportarse mientras duerme. Se dice que, cuanto más profundo sea su sueño, mayor será la distancia a la que se desplace."
+ },
+ {
+  "number": 64,
+  "name": "Kadabra",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Psi",
+  "height_dm": 13,
+  "weight_hg": 565,
+  "description": "La potencia de su telequinesis es inmensa. Acumula poder psíquico en la estrella de la frente como preparativo de cara a su evolución."
+ },
+ {
+  "number": 65,
+  "name": "Alakazam",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Psi",
+  "height_dm": 15,
+  "weight_hg": 480,
+  "description": "Posee unos poderes psíquicos extraordinarios con los que, según se dice, creó las cucharas que lleva en las manos."
+ },
+ {
+  "number": 66,
+  "name": "Machop",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Superpoder",
+  "height_dm": 8,
+  "weight_hg": 195,
+  "description": "Siempre rebosante de energía, pasa el tiempo levantando piedras para hacerse aún más fuerte."
+ },
+ {
+  "number": 67,
+  "name": "Machoke",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Superpoder",
+  "height_dm": 15,
+  "weight_hg": 705,
+  "description": "Tiene una complexión tan fuerte que nunca se cansa. Suele ayudar a la gente a cargar objetos pesados."
+ },
+ {
+  "number": 68,
+  "name": "Machamp",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Superpoder",
+  "height_dm": 16,
+  "weight_hg": 1300,
+  "description": "Puede dar varios puñetazos de una sola vez gracias a sus cuatro brazos. Golpea más rápido de lo que piensa."
+ },
+ {
+  "number": 69,
+  "name": "Bellsprout",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Flor",
+  "height_dm": 7,
+  "weight_hg": 40,
+  "description": "Bellsprout tiene un cuerpo delgado y flexible que le permite inclinarse y balancearse para esquivar los ataques. Este Pokémon escupe por la boca un fluido corrosivo capaz de hacer que se derrita hasta el hierro."
+ },
+ {
+  "number": 70,
+  "name": "Weepinbell",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Matamoscas",
+  "height_dm": 10,
+  "weight_hg": 64,
+  "description": "Weepinbell tiene un gancho a modo de extremidad superior trasera, que usa por la noche para colgarse de una rama y echarse a dormir. Si se mueve mientras duerme, puede acabar en el suelo."
+ },
+ {
+  "number": 71,
+  "name": "Victreebel",
+  "primary_type": "Planta",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Matamoscas",
+  "height_dm": 17,
+  "weight_hg": 155,
+  "description": "Victreebel tiene una enredadera que le sale de la cabeza y que agita a modo de señuelo para atraer a sus presas y así engullirlas por sorpresa cuando estas se aproximan incautas."
+ },
+ {
+  "number": 72,
+  "name": "Tentacool",
+  "primary_type": "Agua",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Medusa",
+  "height_dm": 9,
+  "weight_hg": 455,
+  "description": "Su cuerpo está compuesto casi por completo de agua, por lo que resulta muy difícil distinguirlo cuando está sumergido en el mar."
+ },
+ {
+  "number": 73,
+  "name": "Tentacruel",
+  "primary_type": "Agua",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Medusa",
+  "height_dm": 16,
+  "weight_hg": 550,
+  "description": "Puede estirar y contraer con total libertad sus 80 tentáculos. Con ellos atrapa a sus presas y les inyecta un veneno debilitante."
+ },
+ {
+  "number": 74,
+  "name": "Geodude",
+  "primary_type": "Roca",
+  "secondary_type": "Tierra",
+  "genus": "Pokémon Roca",
+  "height_dm": 4,
+  "weight_hg": 200,
+  "description": "Escala a manos desnudas las pendientes de las montañas. Al parecer, esta fue la fuente de inspiración para la práctica de la escalada libre."
+ },
+ {
+  "number": 75,
+  "name": "Graveler",
+  "primary_type": "Roca",
+  "secondary_type": "Tierra",
+  "genus": "Pokémon Roca",
+  "height_dm": 10,
+  "weight_hg": 1050,
+  "description": "Se desplaza rodando por las laderas. Si por mala fortuna termina cayendo en un río, con su último aliento causa una gigantesca explosión."
+ },
+ {
+  "number": 76,
+  "name": "Golem",
+  "primary_type": "Roca",
+  "secondary_type": "Tierra",
+  "genus": "Pokémon Megatón",
+  "height_dm": 14,
+  "weight_hg": 3000,
+  "description": "Puede hacer estallar su cuerpo a voluntad. El impulso que esto genera le permite ascender a toda velocidad a la cima de las montañas."
+ },
+ {
+  "number": 77,
+  "name": "Ponyta",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Caballo Fuego",
+  "height_dm": 10,
+  "weight_hg": 300,
+  "description": "Por extraño que parezca, una vez que alguien se ha hecho merecedor de su confianza, puede tocarle la ardiente crin sin quemarse."
+ },
+ {
+  "number": 78,
+  "name": "Rapidash",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Caballo Fuego",
+  "height_dm": 17,
+  "weight_hg": 950,
+  "description": "El ejemplar más rápido se convierte en el líder de la manada y decide tanto el ritmo de galope como su destino."
+ },
+ {
+  "number": 79,
+  "name": "Slowpoke",
+  "primary_type": "Agua",
+  "secondary_type": "Psíquico",
+  "genus": "Pokémon Atontado",
+  "height_dm": 12,
+  "weight_hg": 360,
+  "description": "Hunde la cola en el agua y la usa cual caña de pescar. La sustancia dulce que secreta le sirve de cebo para atraer a sus presas."
+ },
+ {
+  "number": 80,
+  "name": "Slowbro",
+  "primary_type": "Agua",
+  "secondary_type": "Psíquico",
+  "genus": "Pokémon Ermitaño",
+  "height_dm": 16,
+  "weight_hg": 785,
+  "description": "Se volvió bípedo por el impacto que le causó la mordedura del Shellder. Si este se desprende, vuelve a convertirse en un Slowpoke."
+ },
+ {
+  "number": 81,
+  "name": "Magnemite",
+  "primary_type": "Eléctrico",
+  "secondary_type": "Acero",
+  "genus": "Pokémon Imán",
+  "height_dm": 3,
+  "weight_hg": 60,
+  "description": "Se nutre de electricidad. Puede flotar en el aire gracias a las ondas electromagnéticas que emite a través de las unidades de sus extremidades."
+ },
+ {
+  "number": 82,
+  "name": "Magneton",
+  "primary_type": "Eléctrico",
+  "secondary_type": "Acero",
+  "genus": "Pokémon Imán",
+  "height_dm": 10,
+  "weight_hg": 600,
+  "description": "Emite de forma constante una potente fuerza magnética que causa estragos en prácticamente cualquier ordenador al que se acerque."
+ },
+ {
+  "number": 83,
+  "name": "Farfetch’d",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Pato Salvaje",
+  "height_dm": 8,
+  "weight_hg": 150,
+  "description": "Combate empuñando un puerro como arma. La forma de blandirlo es tan variada que ha llegado a generar sus propias escuelas."
+ },
+ {
+  "number": 84,
+  "name": "Doduo",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Ave Gemela",
+  "height_dm": 14,
+  "weight_hg": 392,
+  "description": "Doduo es un Pokémon bicéfalo de cerebros idénticos. Según un estudio científico, podría darse el extraño caso de que hubiera algún Doduo con cerebros distintos."
+ },
+ {
+  "number": 85,
+  "name": "Dodrio",
+  "primary_type": "Normal",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Ave Triple",
+  "height_dm": 18,
+  "weight_hg": 852,
+  "description": "Según parece, las cabezas no son las únicas partes del cuerpo que tiene triplicadas. Dodrio también tiene tres corazones y tres pares de pulmones. Con esta constitución, puede correr largas distancias sin cansarse."
+ },
+ {
+  "number": 86,
+  "name": "Seel",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon León Marino",
+  "height_dm": 11,
+  "weight_hg": 900,
+  "description": "La gruesa capa de grasa que le permite nadar sin problemas en aguas frías le da más de un sofoco en climas más cálidos."
+ },
+ {
+  "number": 87,
+  "name": "Dewgong",
+  "primary_type": "Agua",
+  "secondary_type": "Hielo",
+  "genus": "Pokémon León Marino",
+  "height_dm": 17,
+  "weight_hg": 1200,
+  "description": "Le gusta tenderse al sol en la playa después de comer, ya que aumentar su temperatura corporal le facilita la digestión."
+ },
+ {
+  "number": 88,
+  "name": "Grimer",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Lodo",
+  "height_dm": 9,
+  "weight_hg": 300,
+  "description": "Debido a la reducción en los vertidos de aguas residuales, su fuente de alimento ha menguado y ahora se encuentra en peligro de extinción."
+ },
+ {
+  "number": 89,
+  "name": "Muk",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Lodo",
+  "height_dm": 12,
+  "weight_hg": 300,
+  "description": "Al ser un portador de toda clase de gérmenes, ha sido perseguido a lo largo de la historia hasta verse abocado casi a la extinción."
+ },
+ {
+  "number": 90,
+  "name": "Shellder",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Bivalvo",
+  "height_dm": 3,
+  "weight_hg": 40,
+  "description": "La concha lo protege de cualquier tipo de ataque. Solo es vulnerable cuando se abre."
+ },
+ {
+  "number": 91,
+  "name": "Cloyster",
+  "primary_type": "Agua",
+  "secondary_type": "Hielo",
+  "genus": "Pokémon Bivalvo",
+  "height_dm": 15,
+  "weight_hg": 1325,
+  "description": "Una vez que ha cerrado la concha, es imposible abrirla, independientemente de la fuerza que se ejerza."
+ },
+ {
+  "number": 92,
+  "name": "Gastly",
+  "primary_type": "Fantasma",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Gas",
+  "height_dm": 13,
+  "weight_hg": 1,
+  "description": "Con su cuerpo gaseoso puede colarse por donde quiera, aunque con un golpe de viento sale despedido."
+ },
+ {
+  "number": 93,
+  "name": "Haunter",
+  "primary_type": "Fantasma",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Gas",
+  "height_dm": 16,
+  "weight_hg": 1,
+  "description": "Cuando se tiene la sensación de ser observado en la oscuridad sin que haya nadie alrededor, seguro que es porque un Haunter anda cerca."
+ },
+ {
+  "number": 94,
+  "name": "Gengar",
+  "primary_type": "Fantasma",
+  "secondary_type": "Veneno",
+  "genus": "Pokémon Sombra",
+  "height_dm": 15,
+  "weight_hg": 405,
+  "description": "Dicen que sale de la oscuridad para robarles el alma a los que se pierden por las montañas."
+ },
+ {
+  "number": 95,
+  "name": "Onix",
+  "primary_type": "Roca",
+  "secondary_type": "Tierra",
+  "genus": "Pokémon Serpiente Roca",
+  "height_dm": 88,
+  "weight_hg": 2100,
+  "description": "Perfora el suelo a una velocidad de 80 km/h girando y retorciendo su robusto y enorme cuerpo."
+ },
+ {
+  "number": 96,
+  "name": "Drowzee",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Hipnosis",
+  "height_dm": 10,
+  "weight_hg": 324,
+  "description": "Duerme a sus víctimas para luego devorar sus sueños. Las pesadillas no son de su agrado, ya que al parecer tienen un regusto agrio."
+ },
+ {
+  "number": 97,
+  "name": "Hypno",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Hipnosis",
+  "height_dm": 16,
+  "weight_hg": 756,
+  "description": "Este Pokémon presta ayuda al personal médico de los hospitales cuando algún paciente presenta dificultades para conciliar el sueño."
+ },
+ {
+  "number": 98,
+  "name": "Krabby",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Cangrejo",
+  "height_dm": 4,
+  "weight_hg": 65,
+  "description": "Ante el peligro, se camufla con las burbujas que desprende por la boca para parecer más grande."
+ },
+ {
+  "number": 99,
+  "name": "Kingler",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Tenaza",
+  "height_dm": 13,
+  "weight_hg": 600,
+  "description": "Su gran pinza posee una potencia devastadora, pero su peso excesivo la convierte en un estorbo fuera del terreno de combate."
+ },
+ {
+  "number": 100,
+  "name": "Voltorb",
+  "primary_type": "Eléctrico",
+  "secondary_type": null,
+  "genus": "Pokémon Bola",
+  "height_dm": 5,
+  "weight_hg": 104,
+  "description": "Voltorb es tremendamente sensible y a la más mínima sacudida explota. Cuentan que se creó cuando alguien expuso una Poké Ball a una gran descarga eléctrica."
+ },
+ {
+  "number": 101,
+  "name": "Electrode",
+  "primary_type": "Eléctrico",
+  "secondary_type": null,
+  "genus": "Pokémon Bola",
+  "height_dm": 12,
+  "weight_hg": 666,
+  "description": "Una de las características de Electrode es la atracción que siente hacia la electricidad. Son Pokémon problemáticos que suelen agruparse cerca de centrales eléctricas para nutrirse de la energía recién generada."
+ },
+ {
+  "number": 102,
+  "name": "Exeggcute",
+  "primary_type": "Planta",
+  "secondary_type": "Psíquico",
+  "genus": "Pokémon Huevo",
+  "height_dm": 4,
+  "weight_hg": 25,
+  "description": "Necesita contar con la totalidad de sus seis miembros para mantener la calma. Si desaparece uno siquiera, le entran ganas de salir huyendo."
+ },
+ {
+  "number": 103,
+  "name": "Exeggutor",
+  "primary_type": "Planta",
+  "secondary_type": "Psíquico",
+  "genus": "Pokémon Coco",
+  "height_dm": 20,
+  "weight_hg": 1200,
+  "description": "Puede lanzar ataques psíquicos de gran potencia si sus tres cabezas se ponen de acuerdo. Cuando se nubla el cielo, sus movimientos se ralentizan."
+ },
+ {
+  "number": 104,
+  "name": "Cubone",
+  "primary_type": "Tierra",
+  "secondary_type": null,
+  "genus": "Pokémon Solitario",
+  "height_dm": 4,
+  "weight_hg": 65,
+  "description": "Lleva puesto el cráneo de su difunta madre. A veces llora en sueños, pero cada lágrima vertida le hace más fuerte."
+ },
+ {
+  "number": 105,
+  "name": "Marowak",
+  "primary_type": "Tierra",
+  "secondary_type": null,
+  "genus": "Pokémon Apilahueso",
+  "height_dm": 10,
+  "weight_hg": 450,
+  "description": "Al evolucionar, se ha fusionado con el cráneo de su madre y, además, ha adquirido un carácter agresivo."
+ },
+ {
+  "number": 106,
+  "name": "Hitmonlee",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Patada",
+  "height_dm": 15,
+  "weight_hg": 498,
+  "description": "Encoge y estira las piernas a su antojo. De hecho, hasta puede propinar una patada a un rival que se encuentre lejos."
+ },
+ {
+  "number": 107,
+  "name": "Hitmonchan",
+  "primary_type": "Lucha",
+  "secondary_type": null,
+  "genus": "Pokémon Puñetazo",
+  "height_dm": 14,
+  "weight_hg": 502,
+  "description": "Sus puñetazos son capaces incluso de cortar el aire, aunque parece necesitar un descanso tras estar luchando durante 3 min."
+ },
+ {
+  "number": 108,
+  "name": "Lickitung",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Lametazo",
+  "height_dm": 12,
+  "weight_hg": 655,
+  "description": "Se nutre principalmente de Pokémon insecto, a los que paraliza primero lamiéndolos con su larga lengua y luego engulle de un bocado."
+ },
+ {
+  "number": 109,
+  "name": "Koffing",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Gas Venenoso",
+  "height_dm": 6,
+  "weight_hg": 10,
+  "description": "Se nutre de aire contaminado. Al parecer, antaño eran mucho más numerosos en Galar."
+ },
+ {
+  "number": 110,
+  "name": "Weezing",
+  "primary_type": "Veneno",
+  "secondary_type": null,
+  "genus": "Pokémon Gas Venenoso",
+  "height_dm": 12,
+  "weight_hg": 95,
+  "description": "Posee una capacidad de succión inferior a la del Weezing de Galar, pero las toxinas que genera son más potentes."
+ },
+ {
+  "number": 111,
+  "name": "Rhyhorn",
+  "primary_type": "Tierra",
+  "secondary_type": "Roca",
+  "genus": "Pokémon Clavos",
+  "height_dm": 10,
+  "weight_hg": 1150,
+  "description": "La cabeza no le da para retener más de una cosa. Si se pone a correr, se le olvida al instante por qué empezó a hacerlo."
+ },
+ {
+  "number": 112,
+  "name": "Rhydon",
+  "primary_type": "Tierra",
+  "secondary_type": "Roca",
+  "genus": "Pokémon Taladro",
+  "height_dm": 19,
+  "weight_hg": 1200,
+  "description": "La piel le sirve de escudo protector. Puede vivir en lava líquida a 2000 °C."
+ },
+ {
+  "number": 113,
+  "name": "Chansey",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Huevo",
+  "height_dm": 11,
+  "weight_hg": 346,
+  "description": "Este Pokémon solía ser lento de reflejos, pero ha desarrollado una gran velocidad para evitar que le roben sus preciados huevos."
+ },
+ {
+  "number": 114,
+  "name": "Tangela",
+  "primary_type": "Planta",
+  "secondary_type": null,
+  "genus": "Pokémon Enredadera",
+  "height_dm": 10,
+  "weight_hg": 350,
+  "description": "Sus lianas despiden una fragancia peculiar. En cierta zona de Galar se usan como aderezo."
+ },
+ {
+  "number": 115,
+  "name": "Kangaskhan",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Maternal",
+  "height_dm": 22,
+  "weight_hg": 800,
+  "description": "Se han documentado casos de Kangaskhan sin crías que han adoptado bebés humanos cuyos padres habían sido víctimas de accidentes."
+ },
+ {
+  "number": 116,
+  "name": "Horsea",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Dragón",
+  "height_dm": 4,
+  "weight_hg": 80,
+  "description": "Nada con la gracilidad de un bailarín, creando remolinos a su paso, y juega con sus congéneres a ver quién forma el más grande."
+ },
+ {
+  "number": 117,
+  "name": "Seadra",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Dragón",
+  "height_dm": 12,
+  "weight_hg": 250,
+  "description": "Su estrecho morro posee tal fuerza de succión que es capaz de aspirar presas de mayor tamaño y engullirlas enteras."
+ },
+ {
+  "number": 118,
+  "name": "Goldeen",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Pez Color",
+  "height_dm": 6,
+  "weight_hg": 150,
+  "description": "La aleta dorsal y las aletas pectorales están tan desarrolladas que actúan como músculos. Puede nadar a una velocidad de cinco nudos."
+ },
+ {
+  "number": 119,
+  "name": "Seaking",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Pez Color",
+  "height_dm": 13,
+  "weight_hg": 390,
+  "description": "Perfora las piedras del lecho del río con su cuerno para hacer un nido y que la corriente no arrastre sus huevos."
+ },
+ {
+  "number": 120,
+  "name": "Staryu",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Estrella",
+  "height_dm": 8,
+  "weight_hg": 345,
+  "description": "No le importa que le mordisqueen el cuerpo los Pokémon pez, ya que las partes desgarradas se regeneran casi al instante."
+ },
+ {
+  "number": 121,
+  "name": "Starmie",
+  "primary_type": "Agua",
+  "secondary_type": "Psíquico",
+  "genus": "Pokémon Misterioso",
+  "height_dm": 11,
+  "weight_hg": 800,
+  "description": "Starmie absorbe plancton al tiempo que nada por el mar haciendo girar su cuerpo a gran velocidad."
+ },
+ {
+  "number": 122,
+  "name": "Mr. Mime",
+  "primary_type": "Psíquico",
+  "secondary_type": "Hada",
+  "genus": "Pokémon Barrera",
+  "height_dm": 13,
+  "weight_hg": 545,
+  "description": "Domina con maestría la pantomima. La barrera generada con las ondas que emite por los dedos le permite protegerse de numerosos ataques."
+ },
+ {
+  "number": 123,
+  "name": "Scyther",
+  "primary_type": "Bicho",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Mantis",
+  "height_dm": 15,
+  "weight_hg": 560,
+  "description": "El territorio de un Scyther se identifica fácilmente por el gran número de árboles talados de forma indiscriminada en una misma zona del bosque."
+ },
+ {
+  "number": 124,
+  "name": "Jynx",
+  "primary_type": "Hielo",
+  "secondary_type": "Psíquico",
+  "genus": "Pokémon Forma Humana",
+  "height_dm": 14,
+  "weight_hg": 406,
+  "description": "Los ejemplares que habitan en Galar poseen una voz tan delicada y hermosa que incluso cuentan con su propio grupo de admiradores."
+ },
+ {
+  "number": 125,
+  "name": "Electabuzz",
+  "primary_type": "Eléctrico",
+  "secondary_type": null,
+  "genus": "Pokémon Eléctrico",
+  "height_dm": 11,
+  "weight_hg": 300,
+  "description": "Al desatarse una tormenta, se reúnen en torno a los árboles de mayor altura y esperan inmóviles a que caiga algún rayo."
+ },
+ {
+  "number": 126,
+  "name": "Magmar",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Escupefuego",
+  "height_dm": 13,
+  "weight_hg": 445,
+  "description": "Un Pokémon cuyo cuerpo está siempre envuelto en llamas. Es temido porque se lo considera un causante potencial de incendios."
+ },
+ {
+  "number": 127,
+  "name": "Pinsir",
+  "primary_type": "Bicho",
+  "secondary_type": null,
+  "genus": "Pokémon Escarabajo",
+  "height_dm": 15,
+  "weight_hg": 550,
+  "description": "Usa la cornamenta a modo de pinza para atrapar a sus presas. Acto seguido, las parte por la mitad o las arroja lejos."
+ },
+ {
+  "number": 128,
+  "name": "Tauros",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Toro Bravo",
+  "height_dm": 14,
+  "weight_hg": 884,
+  "description": "Los Tauros que habitan en la región de Galar son de temperamento irascible y no permiten que los humanos monten en su lomo."
+ },
+ {
+  "number": 129,
+  "name": "Magikarp",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Pez",
+  "height_dm": 9,
+  "weight_hg": 100,
+  "description": "Este Pokémon débil y patético se limita a dejarse llevar por la corriente cuando esta tiene fuerza."
+ },
+ {
+  "number": 130,
+  "name": "Gyarados",
+  "primary_type": "Agua",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Atrocidad",
+  "height_dm": 65,
+  "weight_hg": 2350,
+  "description": "Cuando monta en cólera, puede quemarlo todo, incluso en medio de la más violenta tormenta."
+ },
+ {
+  "number": 131,
+  "name": "Lapras",
+  "primary_type": "Agua",
+  "secondary_type": "Hielo",
+  "genus": "Pokémon Transporte",
+  "height_dm": 25,
+  "weight_hg": 2200,
+  "description": "Nada sin problema en aguas heladas gracias a la soberbia resistencia al frío que posee. Su tersa piel es ligeramente fría al tacto."
+ },
+ {
+  "number": 132,
+  "name": "Ditto",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Transformación",
+  "height_dm": 3,
+  "weight_hg": 40,
+  "description": "Cuando se encuentra con otro Ditto, se mueve más rápido de lo normal para intentar adoptar su aspecto."
+ },
+ {
+  "number": 133,
+  "name": "Eevee",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Evolución",
+  "height_dm": 3,
+  "weight_hg": 65,
+  "description": "Su irregular estructura genética alberga el secreto de la capacidad que posee este Pokémon tan especial para adoptar evoluciones muy variadas."
+ },
+ {
+  "number": 134,
+  "name": "Vaporeon",
+  "primary_type": "Agua",
+  "secondary_type": null,
+  "genus": "Pokémon Burbuja",
+  "height_dm": 10,
+  "weight_hg": 290,
+  "description": "La composición celular de su cuerpo es tan similar a la estructura molecular del agua que se vuelve invisible al fundirse en ella."
+ },
+ {
+  "number": 135,
+  "name": "Jolteon",
+  "primary_type": "Eléctrico",
+  "secondary_type": null,
+  "genus": "Pokémon Relámpago",
+  "height_dm": 8,
+  "weight_hg": 245,
+  "description": "Acumula iones negativos de la atmósfera para lanzar rayos de 10 000 V de potencia."
+ },
+ {
+  "number": 136,
+  "name": "Flareon",
+  "primary_type": "Fuego",
+  "secondary_type": null,
+  "genus": "Pokémon Llama",
+  "height_dm": 9,
+  "weight_hg": 250,
+  "description": "Almacena parte del aire que inhala en la saca de fuego de su interior, que llega a calentarse a más de 1700 °C."
+ },
+ {
+  "number": 137,
+  "name": "Porygon",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Virtual",
+  "height_dm": 8,
+  "weight_hg": 365,
+  "description": "Durante los últimos años, ha estado muy activo en el ciberespacio comprobando que no haya datos sospechosos."
+ },
+ {
+  "number": 138,
+  "name": "Omanyte",
+  "primary_type": "Roca",
+  "secondary_type": "Agua",
+  "genus": "Pokémon Espiral",
+  "height_dm": 4,
+  "weight_hg": 75,
+  "description": "Un Pokémon de la era prehistórica, ahora extinto. Solía nadar moviendo sus diez tentáculos para desplazarse por el agua como si flotara."
+ },
+ {
+  "number": 139,
+  "name": "Omastar",
+  "primary_type": "Roca",
+  "secondary_type": "Agua",
+  "genus": "Pokémon Espiral",
+  "height_dm": 10,
+  "weight_hg": 350,
+  "description": "Posee unos colmillos afilados con los que puede partir piedras, pero solo ataca a presas que se hallan al alcance de sus tentáculos."
+ },
+ {
+  "number": 140,
+  "name": "Kabuto",
+  "primary_type": "Roca",
+  "secondary_type": "Agua",
+  "genus": "Pokémon Armazón",
+  "height_dm": 5,
+  "weight_hg": 115,
+  "description": "Se consideraba extinto, pero, al parecer, existen determinadas zonas en las que es posible hallar ejemplares con facilidad."
+ },
+ {
+  "number": 141,
+  "name": "Kabutops",
+  "primary_type": "Roca",
+  "secondary_type": "Agua",
+  "genus": "Pokémon Armazón",
+  "height_dm": 13,
+  "weight_hg": 405,
+  "description": "Se desconoce el motivo de la extinción de este feroz Pokémon prehistórico que habitaba en los cálidos mares de antaño."
+ },
+ {
+  "number": 142,
+  "name": "Aerodactyl",
+  "primary_type": "Roca",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Fósil",
+  "height_dm": 18,
+  "weight_hg": 590,
+  "description": "Sus colmillos, afilados como sierras, pueden hacer trizas incluso la piel de Pokémon de tipo Acero."
+ },
+ {
+  "number": 143,
+  "name": "Snorlax",
+  "primary_type": "Normal",
+  "secondary_type": null,
+  "genus": "Pokémon Dormir",
+  "height_dm": 21,
+  "weight_hg": 4600,
+  "description": "Este Pokémon tiene un estómago a prueba de bomba, por lo que es capaz de ingerir incluso comida podrida o mohosa."
+ },
+ {
+  "number": 144,
+  "name": "Articuno",
+  "primary_type": "Hielo",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Congelar",
+  "height_dm": 17,
+  "weight_hg": 554,
+  "description": "Posee el poder de controlar el hielo a su antojo. Se dice que este Pokémon habita en montañas de nieves perpetuas."
+ },
+ {
+  "number": 145,
+  "name": "Zapdos",
+  "primary_type": "Eléctrico",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Eléctrico",
+  "height_dm": 16,
+  "weight_hg": 526,
+  "description": "Una de las aves legendarias. Dicen que, cuando este Pokémon frota las alas, cae al instante un relámpago del cielo."
+ },
+ {
+  "number": 146,
+  "name": "Moltres",
+  "primary_type": "Fuego",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Llama",
+  "height_dm": 20,
+  "weight_hg": 600,
+  "description": "Se cuenta que alguna vez ha iluminado el camino con sus alas flamígeras para rescatar a alguien que se había perdido en la montaña."
+ },
+ {
+  "number": 147,
+  "name": "Dratini",
+  "primary_type": "Dragón",
+  "secondary_type": null,
+  "genus": "Pokémon Dragón",
+  "height_dm": 18,
+  "weight_hg": 33,
+  "description": "Durante mucho tiempo se dudó de su existencia. La pequeña protuberancia de la frente es en realidad un cuerno incipiente."
+ },
+ {
+  "number": 148,
+  "name": "Dragonair",
+  "primary_type": "Dragón",
+  "secondary_type": null,
+  "genus": "Pokémon Dragón",
+  "height_dm": 40,
+  "weight_hg": 165,
+  "description": "Acumula energía en las esferas de la cola para controlar el clima. La sutil aura que lo rodea le confiere un aspecto misterioso y místico."
+ },
+ {
+  "number": 149,
+  "name": "Dragonite",
+  "primary_type": "Dragón",
+  "secondary_type": "Volador",
+  "genus": "Pokémon Dragón",
+  "height_dm": 22,
+  "weight_hg": 2100,
+  "description": "Se lo conoce como el Avatar de la Mar. Muchos barcos lucen una talla de Dragonite como mascarón de proa."
+ },
+ {
+  "number": 150,
+  "name": "Mewtwo",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Genético",
+  "height_dm": 20,
+  "weight_hg": 1220,
+  "description": "Mewtwo fue creado por manipulación genética. Pero, a pesar de que el hombre creó su cuerpo, dotar a Mewtwo de un corazón compasivo quedó en el olvido."
+ },
+ {
+  "number": 151,
+  "name": "Mew",
+  "primary_type": "Psíquico",
+  "secondary_type": null,
+  "genus": "Pokémon Nueva Especie",
+  "height_dm": 4,
+  "weight_hg": 40,
+  "description": "Dicen que Mew posee el mapa genético de todos los Pokémon. Puede hacerse invisible cuando quiere, así que pasa desapercibido cada vez que se le acerca alguien."
+ }
+]

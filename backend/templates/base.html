@@ -1,0 +1,32 @@
+{% load static %}<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}HabitMon{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/device.css' %}">
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+  <div class="device">
+    <main class="screen {% block screen_class %}{% endblock %}" {% block screen_attrs %}{% endblock %}>
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+  {# Cuadro de confirmación compartido por todos los formularios con data-confirm #}
+  <dialog class="confirm pixel-box" id="confirm-dialog">
+    <p id="confirm-text"></p>
+    <div class="confirm-actions">
+      <button type="button" class="btn" id="confirm-yes">SÍ</button>
+      <button type="button" class="btn btn--ghost" id="confirm-no">NO</button>
+    </div>
+  </dialog>
+
+  <script src="{% static 'js/ui.js' %}"></script>
+  <script src="{% static 'js/gestures.js' %}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
