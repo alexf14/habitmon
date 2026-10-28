@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screen_bg">#FFF6F3E4</color>
+    <color name="ink">#FF1D2230</color>
+    <color name="muted">#FF6B6F7A</color>
+    <color name="accent">#FFE3350D</color>
+    <color name="plant_green">#FF4CAF50</color>
+    <color name="fire_orange">#FFF08030</color>
+    <color name="water_blue">#FF4F86E8</color>
+    <color name="gb_0">#FF0F380F</color>
+    <color name="gb_1">#FF306230</color>
+    <color name="gb_2">#FF8BAC0F</color>
+    <color name="gb_3">#FF9BBC0F</color>
+    <color name="energy_yellow">#FFE8C547</color>
+    <color name="bond_pink">#FFE86F9A</color>
+</resources>

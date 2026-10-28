@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HabitMon</string>
+    <string name="welcome_title">HABITMON</string>
+    <string name="welcome_subtitle">¡Tu compañero Pokémon te espera!</string>
+    <string name="btn_start">COMENZAR</string>
+    <string name="btn_choose">ELEGIR</string>
+    <string name="btn_continue">CONTINUAR</string>
+    <string name="btn_close">CERRAR</string>
+    <string name="btn_info">INFO</string>
+    <string name="selection_title">ELIGE TU COMPAÑERO</string>
+    <string name="home_level">Nv. %d</string>
+    <string name="pokedex_title">POKÉDEX</string>
+    <string name="activity_title">PROGRESO DIARIO</string>
+    <string name="tab_steps">PASOS</string>
+    <string name="tab_km">KILÓMETROS</string>
+    <string name="debug_title">MODO DEBUG</string>
+    <string name="debug_add_steps">+ %d PASOS</string>
+    <string name="debug_unlock">DESBLOQUEAR #%03d</string>
+    <string name="debug_reset">RESET COMPLETO</string>
+    <string name="loading">Cargando…</string>
+    <string name="stat_exp">EXP</string>
+    <string name="stat_happiness">FEL</string>
+    <string name="stat_energy">ENE</string>
+    <string name="stat_bond">VIN</string>
+    <string name="label_number">Nº</string>
+    <string name="label_type">Tipo</string>
+    <string name="label_species">Especie</string>
+    <string name="label_height">Altura</string>
+    <string name="label_weight">Peso</string>
+    <string name="label_level">Nivel</string>
+    <string name="label_happiness">Felicidad</string>
+    <string name="label_energy">Energía</string>
+    <string name="label_bond">Vínculo</string>
+    <string name="label_since">Desde</string>
+</resources>

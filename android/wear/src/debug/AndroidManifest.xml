@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- Solo en builds de debug. DUMP lo tiene `adb shell`, no las apps normales. -->
+        <receiver
+            android:name=".debug.DebugReceiver"
+            android:exported="true"
+            android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="com.habitmon.debug.ADD_STEPS" />
+                <action android:name="com.habitmon.debug.SET_STEPS" />
+                <action android:name="com.habitmon.debug.SET_KM" />
+                <action android:name="com.habitmon.debug.SET_COMPANION" />
+                <action android:name="com.habitmon.debug.UNLOCK_POKEMON" />
+                <action android:name="com.habitmon.debug.RESET" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
