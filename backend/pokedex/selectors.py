@@ -23,6 +23,7 @@ class PokedexItem:
     status: str  # "UNKNOWN", "SEEN" o "UNLOCKED"
     name: str
     image_url: str
+    is_active_companion: bool = False
 
     @property
     def number_display(self):
@@ -41,7 +42,7 @@ class PokedexItem:
         return self.status == _UNLOCKED
 
 
-def get_pokedex(profile):
+def get_pokedex(profile, active_companion_number=None):
     entry_status = Subquery(
         PokedexEntry.objects.filter(profile=profile, species=OuterRef("pk")).values("status")[:1]
     )
@@ -54,6 +55,7 @@ def get_pokedex(profile):
             status=status,
             name=s.name if status != _UNKNOWN else "???",
             image_url=s.thumbnail_url if status == _UNLOCKED else s.silhouette_url,
+            is_active_companion=(s.pokedex_number == active_companion_number),
         ))
     return items
 

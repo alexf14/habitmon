@@ -8,6 +8,11 @@ from profiles.services import get_local_profile
 from . import selectors
 
 
+def _active_companion_number(profile):
+    companion = get_active_companion(profile)
+    return companion.species.pokedex_number if companion else None
+
+
 def _profile_ready_or_redirect():
     """La Pokédex solo está disponible tras elegir compañero y ver su presentación."""
     profile = get_local_profile()
@@ -28,7 +33,7 @@ def index(request):
         request,
         "pokedex/index.html",
         {
-            "items": selectors.get_pokedex(profile),
+            "items": selectors.get_pokedex(profile, active_companion_number=_active_companion_number(profile)),
             "unlocked_count": selectors.get_unlocked_count(profile),
             "total_count": selectors.get_total_count(),
         },
@@ -44,4 +49,9 @@ def detail(request, number):
         species, entry = selectors.get_pokemon_detail(profile, number)
     except selectors.PokemonUnknown:
         raise Http404
-    return render(request, "pokedex/detail.html", {"species": species, "entry": entry})
+    active_num = _active_companion_number(profile)
+    return render(request, "pokedex/detail.html", {
+        "species": species,
+        "entry": entry,
+        "is_active_companion": (species.pokedex_number == active_num),
+    })

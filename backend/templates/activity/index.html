@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Podómetro · HabitMon{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/activity.css' %}">{% endblock %}
+{% block screen_class %}screen--ped{% endblock %}
+{% block screen_attrs %}
+  data-swipe-right="{% url 'pokedex:index' %}"
+  data-steps="{{ steps }}"
+  data-kilometers="{{ kilometers }}"
+  data-step-progress="{{ step_progress }}"
+  data-distance-progress="{{ distance_progress }}"
+{% endblock %}
+
+{% block content %}
+
+{# Panel: PASOS #}
+<div class="ped-panel" id="ped-pasos" data-panel="pasos">
+  <h1 class="ped-title">PROGRESO<br>DIARIO</h1>
+  <div class="ped-counter" id="ped-steps-val">{{ steps }}</div>
+  <div class="ped-bar-track" aria-label="Progreso de pasos">
+    <span class="ped-bar-fill" id="ped-steps-bar"></span>
+  </div>
+  <div class="ped-info">
+    <div class="ped-metric">
+      {# Icono pixel-art: bota #}
+      <svg class="ped-icon-svg" viewBox="0 0 16 12" fill="currentColor" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="9" y="0" width="5" height="6"/>
+        <rect x="6" y="3" width="3" height="4"/>
+        <rect x="2" y="6" width="12" height="3"/>
+        <rect x="0" y="7" width="3" height="2"/>
+        <rect x="12" y="6" width="4" height="2"/>
+        <rect x="0" y="9" width="16" height="3"/>
+      </svg>
+      <span class="ped-label">PASOS</span>
+    </div>
+    <img class="ped-pikachu" src="{% static 'sprites/pikachu-pedometer.gif' %}" alt="Pikachu" draggable="false">
+  </div>
+</div>
+
+{# Panel: KILÓMETROS #}
+<div class="ped-panel ped-panel--hidden" id="ped-km" data-panel="km">
+  <h1 class="ped-title">PROGRESO<br>DIARIO</h1>
+  <div class="ped-counter" id="ped-km-val">{{ kilometers|floatformat:2 }}</div>
+  <div class="ped-bar-track" aria-label="Progreso de kilómetros">
+    <span class="ped-bar-fill" id="ped-km-bar"></span>
+  </div>
+  <div class="ped-info">
+    <div class="ped-metric">
+      {# Icono pixel-art: pin de mapa #}
+      <svg class="ped-icon-svg" viewBox="0 0 12 16" fill="currentColor" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="0" width="8" height="1"/>
+        <rect x="1" y="1" width="10" height="1"/>
+        <rect x="0" y="2" width="12" height="5"/>
+        <rect x="1" y="7" width="10" height="1"/>
+        <rect x="2" y="8" width="8" height="1"/>
+        <rect x="3" y="9" width="6" height="1"/>
+        <rect x="4" y="10" width="4" height="1"/>
+        <rect x="5" y="11" width="2" height="5"/>
+      </svg>
+      <span class="ped-label">KIL&#xD3;METROS</span>
+    </div>
+    <img class="ped-pikachu" src="{% static 'sprites/pikachu-pedometer.gif' %}" alt="Pikachu" draggable="false">
+  </div>
+</div>
+
+{# Tab switcher #}
+<div class="ped-tabs" role="tablist" aria-label="Métrica">
+  <button class="ped-tab is-active" data-target="pasos" role="tab" aria-selected="true" aria-label="Pasos"></button>
+  <button class="ped-tab" data-target="km" role="tab" aria-selected="false" aria-label="Kilómetros"></button>
+</div>
+
+{# Back to Pokédex #}
+<a class="edge-tab edge-tab--left" href="{% url 'pokedex:index' %}" aria-label="Volver a la Pokédex">&#9654;</a>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/activity.js' %}"></script>
+{% endblock %}

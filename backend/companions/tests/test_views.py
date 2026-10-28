@@ -99,3 +99,105 @@ def test_home_has_no_reset_button(client):
     finish_intro(client)
     content = client.get(HOME).content.decode()
     assert "REINICIAR" not in content
+
+
+# ---------- PUT /companions/active ----------
+
+import json
+from pokedex import services as dex_services
+
+SET_ACTIVE = reverse("companions:set_active")
+
+
+def _unlock(profile, number):
+    dex_services.unlock_pokemon(profile, number, dex_services.UnlockReason.EVENT)
+
+
+def test_set_active_changes_companion(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+    from profiles.services import get_local_profile
+    _unlock(get_local_profile(), 25)
+
+    response = client.put(
+        SET_ACTIVE,
+        data=json.dumps({"pokemon_id": 25}),
+        content_type="application/json",
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["code"] == 200
+    assert data["companion"]["name"] == "Pikachu"
+    assert Companion.objects.get().species.name == "Pikachu"
+
+
+def test_set_active_already_companion_returns_200(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+
+    response = client.put(
+        SET_ACTIVE,
+        data=json.dumps({"pokemon_id": 4}),
+        content_type="application/json",
+    )
+    assert response.status_code == 200
+    assert "already" in response.json()["message"]
+
+
+def test_set_active_locked_returns_403(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+
+    response = client.put(
+        SET_ACTIVE,
+        data=json.dumps({"pokemon_id": 25}),
+        content_type="application/json",
+    )
+    assert response.status_code == 403
+
+
+def test_set_active_unknown_pokemon_returns_404(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+
+    response = client.put(
+        SET_ACTIVE,
+        data=json.dumps({"pokemon_id": 9999}),
+        content_type="application/json",
+    )
+    assert response.status_code == 404
+
+
+def test_set_active_invalid_body_returns_400(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+
+    response = client.put(
+        SET_ACTIVE,
+        data="not-json",
+        content_type="application/json",
+    )
+    assert response.status_code == 400
+
+
+def test_set_active_missing_pokemon_id_returns_400(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+
+    response = client.put(
+        SET_ACTIVE,
+        data=json.dumps({}),
+        content_type="application/json",
+    )
+    assert response.status_code == 400
+
+
+def test_set_active_does_not_clear_pokedex(client):
+    pick(client, "Charmander")
+    finish_intro(client)
+    from pokedex.models import PokedexEntry
+    from profiles.services import get_local_profile
+    _unlock(get_local_profile(), 25)
+
+    client.put(SET_ACTIVE, data=json.dumps({"pokemon_id": 25}), content_type="application/json")
+    assert PokedexEntry.objects.count() == 2

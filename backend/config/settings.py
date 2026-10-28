@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'profiles',
     'companions',
     'pokedex',
+    'activity',
     'development',
 ]
 

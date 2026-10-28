@@ -1,5 +1,8 @@
-from django.http import HttpResponseBadRequest
+import json
+
+from django.http import HttpResponseBadRequest, JsonResponse
 from django.shortcuts import redirect, render
+from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 
 from profiles.services import get_local_profile
@@ -59,6 +62,42 @@ def intro(request):
         "companions/intro.html",
         {"companion": companion, "lines": texts.intro_lines(companion.species.name)},
     )
+
+
+@csrf_exempt
+@require_http_methods(["PUT"])
+def set_active(request):
+    try:
+        body = json.loads(request.body)
+    except (json.JSONDecodeError, UnicodeDecodeError):
+        return JsonResponse({"code": 400, "message": "Invalid request body"}, status=400)
+
+    try:
+        pokemon_id = int(body.get("pokemon_id"))
+    except (ValueError, TypeError):
+        return JsonResponse({"code": 400, "message": "Invalid pokemon_id"}, status=400)
+
+    profile = get_local_profile()
+
+    try:
+        companion = services.set_active_companion(profile, pokemon_id)
+    except services.AlreadyActiveCompanion:
+        return JsonResponse({"code": 200, "message": "Pokemon is already the active companion"})
+    except services.PokemonNotFound:
+        return JsonResponse({"code": 404, "message": "Pokemon not found"}, status=404)
+    except services.PokemonNotUnlocked:
+        return JsonResponse({"code": 403, "message": "Pokemon must be unlocked to become a companion"}, status=403)
+    except Exception:
+        return JsonResponse({"code": 500, "message": "Unable to update companion"}, status=500)
+
+    return JsonResponse({
+        "code": 200,
+        "message": "Active companion updated successfully",
+        "companion": {
+            "pokemon_id": companion.species.pokedex_number,
+            "name": companion.species.name,
+        },
+    })
 
 
 def home(request):

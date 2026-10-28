@@ -80,3 +80,51 @@ def test_reset_game_removes_companion_and_collection(profile, species):
     services.reset_game(profile)
     assert services.get_active_companion(profile) is None
     assert not PokedexEntry.objects.filter(profile=profile).exists()
+
+
+# ---------- set_active_companion ----------
+
+def _setup_with_unlocked(profile, species, starter="Charmander", extra=25):
+    """Crea un compañero inicial y desbloquea otra especie para las pruebas."""
+    from pokedex import services as dex_services
+    services.choose_starter(profile, species(starter).pk)
+    dex_services.unlock_pokemon(profile, extra, dex_services.UnlockReason.EVENT)
+
+
+def test_set_active_companion_changes_species(profile, species):
+    _setup_with_unlocked(profile, species)
+    companion = services.set_active_companion(profile, 25)
+    assert companion.species.name == "Pikachu"
+    assert services.get_active_companion(profile).species.name == "Pikachu"
+
+
+def test_set_active_companion_is_idempotent(profile, species):
+    services.choose_starter(profile, species("Charmander").pk)
+    with pytest.raises(services.AlreadyActiveCompanion):
+        services.set_active_companion(profile, 4)  # Charmander ya es el compañero
+
+
+def test_set_active_companion_requires_unlocked(profile, species):
+    services.choose_starter(profile, species("Charmander").pk)
+    with pytest.raises(services.PokemonNotUnlocked):
+        services.set_active_companion(profile, 25)  # Pikachu no está desbloqueado
+
+
+def test_set_active_companion_requires_unlocked_not_seen(profile, species):
+    from pokedex import services as dex_services
+    services.choose_starter(profile, species("Charmander").pk)
+    dex_services.mark_seen(profile, 25)
+    with pytest.raises(services.PokemonNotUnlocked):
+        services.set_active_companion(profile, 25)
+
+
+def test_set_active_companion_unknown_pokemon_raises(profile, species):
+    services.choose_starter(profile, species("Charmander").pk)
+    with pytest.raises(services.PokemonNotFound):
+        services.set_active_companion(profile, 9999)
+
+
+def test_set_active_companion_does_not_remove_pokedex_entries(profile, species):
+    _setup_with_unlocked(profile, species, starter="Charmander", extra=25)
+    services.set_active_companion(profile, 25)
+    assert PokedexEntry.objects.filter(profile=profile).count() == 2

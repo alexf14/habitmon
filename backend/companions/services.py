@@ -15,6 +15,18 @@ class InvalidStarter(Exception):
     """La especie no es un inicial seleccionable (RF-002)."""
 
 
+class PokemonNotFound(Exception):
+    """La especie no existe en el catálogo."""
+
+
+class PokemonNotUnlocked(Exception):
+    """La especie no está desbloqueada en la Pokédex del perfil."""
+
+
+class AlreadyActiveCompanion(Exception):
+    """La especie indicada ya es el compañero activo."""
+
+
 def get_active_companion(profile):
     """Devuelve el compañero del perfil, o None (RF-001, RF-006)."""
     return Companion.objects.select_related("species").filter(profile=profile).first()
@@ -42,6 +54,36 @@ def complete_intro(companion):
     if not companion.intro_completed:
         companion.intro_completed = True
         companion.save(update_fields=["intro_completed", "updated_at"])
+
+
+@transaction.atomic
+def set_active_companion(profile, pokemon_id):
+    """Cambia la especie del compañero activo. El Pokémon debe estar UNLOCKED."""
+    from pokedex.models import PokedexEntry
+
+    try:
+        species = PokemonSpecies.objects.get(pokedex_number=pokemon_id)
+    except PokemonSpecies.DoesNotExist:
+        raise PokemonNotFound
+
+    companion = get_active_companion(profile)
+    if companion is None:
+        raise PokemonNotFound
+
+    if companion.species.pokedex_number == pokemon_id:
+        raise AlreadyActiveCompanion
+
+    try:
+        entry = PokedexEntry.objects.get(profile=profile, species=species)
+    except PokedexEntry.DoesNotExist:
+        raise PokemonNotUnlocked
+
+    if entry.status != PokedexEntry.Status.UNLOCKED:
+        raise PokemonNotUnlocked
+
+    companion.species = species
+    companion.save(update_fields=["species", "updated_at"])
+    return companion
 
 
 @transaction.atomic

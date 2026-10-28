@@ -4,7 +4,7 @@
 {% block title %}Pokédex · HabitMon{% endblock %}
 {% block extra_css %}<link rel="stylesheet" href="{% static 'css/pokedex.css' %}">{% endblock %}
 {% block screen_class %}screen--dex{% endblock %}
-{% block screen_attrs %}data-swipe-right="{% url 'companions:home' %}" data-scroller="#dex-list"{% endblock %}
+{% block screen_attrs %}data-swipe-right="{% url 'companions:home' %}" data-swipe-left="{% url 'activity:index' %}" data-scroller="#dex-list"{% endblock %}
 
 {% block content %}
 <header class="dex-header">
@@ -24,7 +24,12 @@
     <a class="dex-row" href="{% url 'pokedex:detail' item.number %}">
       <span class="dex-num">#{{ item.number_display }}</span>
       <img src="{{ item.image_url }}" alt="" width="80" height="80" loading="lazy" draggable="false">
-      <span class="dex-name">{{ item.name|upper }}</span>
+      <span class="dex-name">
+        {{ item.name|upper }}
+        {% if item.is_active_companion %}
+        <span class="pokeball--mini" aria-label="Compañero activo"></span>
+        {% endif %}
+      </span>
     </a>
     {% elif item.is_seen %}
     <a class="dex-row dex-row--seen" href="{% url 'pokedex:detail' item.number %}"
@@ -45,6 +50,7 @@
 </ol>
 
 <a class="edge-tab edge-tab--left" href="{% url 'companions:home' %}" aria-label="Volver al compañero">&#9654;</a>
+<a class="edge-tab edge-tab--right" href="{% url 'activity:index' %}" aria-label="Ir al podómetro">&#9654;</a>
 {% endblock %}
 
 {% block scripts %}

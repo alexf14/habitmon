@@ -89,7 +89,7 @@ a.dex-row .dex-name::after { content: " ›"; color: var(--accent); }
 .screen--dex-detail {
   justify-content: flex-start;
   gap: 8px;
-  padding: 11% 15% 10%;
+  padding: 11% 15% 8%;
 }
 
 .dex-detail-header { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: none; }
@@ -154,6 +154,57 @@ a.dex-row .dex-name::after { content: " ›"; color: var(--accent); }
   letter-spacing: 2px;
   padding: 8px 0;
 }
+
+/* ---------- Mini Poké Ball (CSS gradient, misma técnica que .pokeball) ---------- */
+
+.pokeball--mini {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  background:
+    radial-gradient(circle, #fff 0 2px, var(--ink) 2px 3.5px, transparent 3.5px),
+    linear-gradient(var(--accent) 0 45%, var(--ink) 45% 55%, #fff 55%);
+  margin-left: 4px;
+}
+
+/* ---------- Botón / indicador en la ficha ---------- */
+
+/* Fijo al fondo de la pantalla para no comprimir el body */
+.dex-companion-action {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Espacio inferior en el body para que no quede oculto tras el botón */
+.screen--dex-detail:has(.dex-companion-action) .dex-detail-body {
+  padding-bottom: 50px;
+}
+
+.dex-set-companion-btn {
+  font-size: 7px;
+  padding: 10px 14px;
+  min-height: 38px;
+}
+
+.dex-companion-current {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 8px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ---------- Pantallas estrechas ---------- */
 
 @media (max-width: 520px) {
   .dex-row { height: 72px; grid-template-columns: 38px 64px 1fr; gap: 6px; font-size: 8px; }

@@ -44,5 +44,47 @@
   {% endif %}
 </div>
 
+{# Botón de compañero (solo para UNLOCKED) #}
+{% if entry.status == "UNLOCKED" %}
+<div class="dex-companion-action">
+  {% if is_active_companion %}
+  <p class="dex-companion-current">
+    <span class="pokeball--mini" style="width:20px;height:20px;margin-left:0" aria-hidden="true"></span>
+    TU COMPA&#xD1;ERO ACTUAL
+  </p>
+  {% else %}
+  <button type="button" class="btn btn--small dex-set-companion-btn"
+          id="set-companion-btn"
+          data-name="{{ species.name|upper }}"
+          data-pokemon-id="{{ species.pokedex_number }}">
+    ESTABLECER COMO COMPA&#xD1;ERO
+  </button>
+  {% endif %}
+</div>
+{% endif %}
+
 <a class="edge-tab edge-tab--left" href="{% url 'pokedex:index' %}" aria-label="Volver a la Pokédex">&#9654;</a>
+
+{# Diálogo de confirmación del cambio de compañero #}
+<dialog class="confirm pixel-box" id="companion-confirm-dialog">
+  <p id="companion-confirm-text"></p>
+  <div class="confirm-actions">
+    <button type="button" class="btn" id="companion-confirm-yes">CONFIRMAR</button>
+    <button type="button" class="btn btn--ghost" id="companion-confirm-no">CANCELAR</button>
+  </div>
+</dialog>
+
+{# Mensaje de éxito tras el cambio #}
+<dialog class="info pixel-box" id="companion-success-dialog">
+  <p id="companion-success-text"></p>
+  <button type="button" class="btn btn--small" id="companion-success-close">OK</button>
+</dialog>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+  window.COMPANION_URL = "{% url 'companions:set_active' %}";
+</script>
+<script src="{% static 'js/pokedex.js' %}"></script>
 {% endblock %}

@@ -1,0 +1,149 @@
+/* Podómetro: pantalla circular con sub-paneles de pasos y kilómetros. */
+
+.screen--ped {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ---------- Panel ---------- */
+
+.ped-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+  animation: ped-enter .2s ease-out;
+}
+
+.ped-panel--hidden {
+  display: none;
+}
+
+/* ---------- Título ---------- */
+
+.ped-title {
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 0;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+
+/* ---------- Contador grande ---------- */
+
+.ped-counter {
+  font-family: var(--font);
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: var(--ink);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, .15);
+  min-width: 0;
+  word-break: break-all;
+}
+
+/* ---------- Barra de progreso ---------- */
+
+.ped-bar-track {
+  width: 100%;
+  height: 12px;
+  background: rgba(0, 0, 0, .06);
+  box-shadow: inset 0 0 0 2px var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.ped-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  width: 0%;
+  transition: width .7s cubic-bezier(.4, 0, .2, 1);
+  min-width: 0;
+}
+
+/* ---------- Fila icono + label + Pikachu ---------- */
+
+.ped-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+
+/* Grupo icono SVG + label apilados */
+.ped-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Icono pixel-art SVG */
+.ped-icon-svg {
+  width: 38px;
+  height: 38px;
+  color: var(--ink);
+  display: block;
+}
+
+.ped-label {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--ink);
+  line-height: 1;
+}
+
+/* Sprite de Pikachu */
+.ped-pikachu {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex: none;
+}
+
+/* ---------- Tabs (indicadores de panel) ---------- */
+
+.ped-tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ped-tab {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, .2);
+  cursor: pointer;
+  transition: background .2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ped-tab.is-active {
+  background: var(--ink);
+}
+
+/* ---------- Animaciones ---------- */
+
+@keyframes ped-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------- Pantallas estrechas ---------- */
+
+@media (max-width: 520px) {
+  .ped-counter { font-size: 30px; }
+  .ped-pikachu { width: 56px; height: 56px; }
+  .ped-icon-svg { width: 30px; height: 30px; }
+  .ped-label { font-size: 8px; }
+  .ped-title { font-size: 8px; }
+}
